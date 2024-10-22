@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIMEEXPLORA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://www.fime.uanl.mx/wp-content/uploads/2021/10/fime-logo-1.png" alt="Imagenfime" class="logo">
+            <h1>FIMEEXPLORA</h1>
+        </div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#introduccion">Introducción</a>
+            <a href="#semestres">Semestres</a>
+            <a href="#opiniones">Opiniones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>¡Holaa! Somos unos alumnos de la Facultad de Ingeniería Mecánica y Eléctrica (FIME) en esta página estaremos viendo algunas materias de algunos semestres mencionando los temas que más se te pueden dificultar.</p>
+    </section>
+
+    <section id="carrusel">
+        <div class="carrusel-container">
+            <img src="fime.png" alt="Imagen 1" class="carrusel-imagen" id="carrusel-imagen">
+            <img src="oso fime.jpg" alt="Imagen 2" class="carrusel-imagen">
+            <img src="fime 2.jpg" alt="Imagen 3" class="carrusel-imagen">
+        </div>
+        <button class="carrusel-btn" onclick="cambiarImagen(-1)">&#10094;</button>
+        <button class="carrusel-btn" onclick="cambiarImagen(1)">&#10095;</button>
+    </section>
+
+    <section id="semestres">
+        <h2>Semestres</h2>
+        
+        <details>
+            <summary>Primer Semestre</summary>
+            <ul>
+                <li><strong>Física I:</strong> En esta materia estarás viendo el tema de CINEMÁTICA, DINÁMICA Y FUERZAS en las cuales serán muy importantes para las materias a futuro.</li>
+                <li><strong>Álgebra para Ingeniería:</strong> Una de las materias más importantes al futuro ya que estarás viendo sumas de vectores o de matrices en cuales se estarán viendo en muchas materias de próximos semestres.</li>
+                <li><strong>Matemáticas I:</strong> La materia más fundamental para las próximas matemáticas ya que estaremos viendo las derivadas que será el principio de muchos temas de matemáticas.</li>
+            </ul>
+        </details>
+    
+        <details>
+            <summary>Segundo Semestre</summary>
+            <ul>
+                <li><strong>Matemáticas II:</strong> En esta materia estaremos viendo integrales que es el tema más importante.</li>
+                <li><strong>Física II:</strong> En esta materia estaremos viendo Movimiento oscilatorio y Mecánicas de fluidos.</li>
+            </ul>
+        </details>
+    
+        <p>Próximamente más materias. (Si tienes dudas de algunas materias en específico, mándanos un mensaje en el apartado de contacto).</p>
+    </section>    
+
+    <section id="opiniones">
+        <h2>Opiniones</h2>
+        <div id="opiniones-lista"></div>
+        <input type="text" id="opiniones-input" placeholder="Escribe tu opinión aquí...">
+        <button onclick="agregarOpinion()">Agregar Opinión</button>
+    </section>
+    
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>WhatsApp: +52 81 2858 1004, +52 81 3385 3590</p>
+        <p>Correo: FIME.EXPLORA@GMAIL.COM</p>
+        <p>Creadores de la página:</p>
+        <ul>
+            <li>2099410 Diego Emiliano Méndez Domínguez IAS</li>
+            <li>2053884 Marco Antonio González Pineda IAS</li>
+            <li>2105057 Enrique Martínez Pérez ITS</li>
+            <li>2052787 René Alejandro Sanmiguel Navas ITS</li>
+            <li>2000022 Rodrigo de Jesús Gutiérrez García IAS</li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
